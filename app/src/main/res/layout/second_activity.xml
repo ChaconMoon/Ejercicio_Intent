@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Activity1">
+    tools:context=".Activity2">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="top|center"
-    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/nombre"
-        android:gravity="top"
-        android:layout_marginTop="90dp"
-        android:layout_marginRight="140dp"
-        android:textSize="24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resultado"
+            android:textSize="30sp"/>
 
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre"
+            android:gravity="top"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="140dp"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,16 +34,16 @@
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
 
-        <EditText
-            android:id="@+id/Nombre"
+        <TextView
+            android:id="@+id/TextNombre"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
-            android:hint="@string/nombre"
-            android:minHeight="48dp" />
+            android:layout_marginTop="125dp"
+            android:minHeight="48dp"
+            android:textSize="24sp"/>
 
 
-</LinearLayout>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -51,8 +56,8 @@
             android:text="@string/apellidos"
             android:gravity="top"
             android:layout_marginTop="400dp"
-            android:layout_marginRight="135dp"
-            android:textSize="24dp"/>
+            android:layout_marginEnd="135dp"
+            android:textSize="24sp"/>
 
     </LinearLayout>
     <LinearLayout
@@ -62,14 +67,14 @@
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
 
-        <EditText
-            android:id="@+id/apellidos"
+        <TextView
+            android:id="@+id/Textapellidos"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="395dp"
-            android:hint="@string/apellidos"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textSize="24sp"/>
 
 
     </LinearLayout>
@@ -85,8 +90,8 @@
             android:text="@string/curso"
             android:gravity="top"
             android:layout_marginTop="600dp"
-            android:layout_marginRight="135dp"
-            android:textSize="24dp"/>
+            android:layout_marginEnd="135dp"
+            android:textSize="24sp"/>
 
     </LinearLayout>
     <LinearLayout
@@ -96,24 +101,13 @@
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
 
-        <EditText
-            android:id="@+id/curso"
+        <TextView
+            android:id="@+id/Textcurso"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="595dp"
-            android:layout_marginRight="60dp"
-            android:hint="@string/curso"
-            android:minHeight="48dp" />
-
-        <Button
-            android:id="@+id/visualizar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="bottom"
-            android:layout_marginTop="45dp"
-            android:text="@string/Visualizar"/>
+            android:layout_marginEnd="60dp"
+            android:minHeight="48dp"
+            android:textSize="24sp"/>
     </LinearLayout>
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

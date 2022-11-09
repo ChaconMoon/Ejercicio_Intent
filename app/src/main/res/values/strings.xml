@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="nombre">Nombre :</string>
+    <string name="apellidos">Apellidos: </string>
+    <string name="curso">Curso: </string>
+    <string name="Visualizar">visualizar</string>
+    <string name="resultado">Resultados</string>
 </resources>
