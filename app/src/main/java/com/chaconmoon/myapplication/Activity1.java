@@ -15,9 +15,9 @@ public class Activity1 extends AppCompatActivity {
     private String mNombre;
     private String mApellidos;
     private String mCurso;
-    private String toastNombre;
-    private String toastApellidos;
-    private String toastCurso;
+   // private String toastNombre;
+   // private String toastApellidos;
+   // private String toastCurso;
     private Button nVisualizarButton;
     private Intent mIntent;
 
@@ -29,11 +29,11 @@ public class Activity1 extends AppCompatActivity {
         nVisualizarButton = findViewById(R.id.visualizar);
         nVisualizarButton.setOnClickListener(view -> {
            mNombre=verNombre();
-           toastNombre = "El Nombre es: "+ mNombre;
+         //  toastNombre = "El Nombre es: "+ mNombre;
            mApellidos=verApellidos();
-           toastApellidos = "Los Apellidos son: "+ mApellidos;
+         //  toastApellidos = "Los Apellidos son: "+ mApellidos;
            mCurso=verCurso();
-           toastCurso = "El curso es: "+mCurso;
+          // toastCurso = "El curso es: "+mCurso;
             //Toast.makeText(this,toastNombre,Toast.LENGTH_SHORT).show();
             //Toast.makeText(this,toastApellidos,Toast.LENGTH_SHORT).show();
             //Toast.makeText(this,toastCurso,Toast.LENGTH_SHORT).show();
