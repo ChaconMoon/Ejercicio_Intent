@@ -8,15 +8,17 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Activity2 extends AppCompatActivity {
+    private final String NAME_KEY = "Nombre";
+    private final String SURNAME_KEY = "Apellidos";
+    private final String GRADE_KEY = "Curso";
+
     TextView nombre;
     TextView apellidos;
     TextView curso;
     String textNombre;
     String textApellidos;
     String textCurso;
-    private final String NAME_KEY = "Nombre";
-    private final String SURNAME_KEY = "Apellidos";
-    private final String GRADE_KEY = "Curso";
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

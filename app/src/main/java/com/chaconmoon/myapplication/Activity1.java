@@ -8,6 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class Activity1 extends AppCompatActivity {
+    private final String NAME_KEY = "Nombre";
+    private final String SURNAME_KEY = "Apellidos";
+    private final String GRADE_KEY = "Curso";
 
     private String mNombre;
     private String mApellidos;
@@ -17,9 +20,7 @@ public class Activity1 extends AppCompatActivity {
     private String toastCurso;
     private Button nVisualizarButton;
     private Intent mIntent;
-    private final String NAME_KEY = "Nombre";
-    private final String SURNAME_KEY = "Apellidos";
-    private final String GRADE_KEY = "Curso";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
